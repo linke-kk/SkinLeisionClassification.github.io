@@ -40,26 +40,36 @@
   (why is what you did important), and then to state in simple words what you 
   attempted to do, and then to describe the results and findings that 
   you obtained as a result of your investigation. -->
-  Pigmented skin lesions identification plays an important part in accurately
-detecting harmful skin diseases. Image detection and classification techniques 
-are now widely used to improve the overall accuracy of skin cancer detection. 
-Our project proposed an InceptionV3-based model enhanced by optimizing RGB 
-weights (with WeightedRGBLayer) to classify the skin lesion image dataset HAM10000. 
-Given the imbalanced distribution of the dataset, 100 images were sample from 
-all seven categories, and augmented to construct a new set with 2800 images. 
-A baseline was setup with a batch normalization layer and the InceptionV3 
-architecture resulting a 92% accuracy. As the WeightedRGBLayer being implemented 
-prior to the InceptionV3 module, algorithm‘s variance was reduced.Our RGB-optimizing layer enhanced model performance, indicating better 
-classification ability compared to those without the WeightedRGBLayer.
+  Pigmented skin lesions identification plays an important role in accurately 
+  detecting harmful skin diseases, while image detection and classification 
+  techniques are now widely applied to improve the overall accuracy of skin 
+  cancer detection. Our project proposed an InceptionV3-based model enhanced by 
+  optimizing RGB weights (with WeightedRGBLayer) to classify the skin lesion image 
+  dataset HAM10000. Given the imbalanced distribution of the dataset, 100 images 
+  were sample from all seven categories, and augmented to construct a new set with 
+  2800 images. A baseline was setup with a batch normalization layer and the 
+  InceptionV3 architecture resulting a 92% accuracy. As the WeightedRGBLayer being 
+  implemented prior to the InceptionV3 module, algorithm’s variance was reduced.  
+  Several operations on the images have been applied to the dataset to simulate 
+  different imaging conditions, including Gaussian blur and lens distortion. Our 
+  RGB-optimizing layer enhanced model performance, indicating better classification 
+  ability compared to those without the WeightedRGBLayer.
   
   <!-- <p>
   Please feel free to add any additional links that are relevant <a href="http://www.google.com">here</a>. -->
   <tr><td align="center">
   <br>
   <p>
-  <img src="image1.jpeg" width="60%">
+  <img src="Picture1.jpeg" width="60%">
   <p>
-  (a) An example of original input image; <br>(b) An example of image being reweighted by WeightedRGBLayer.
+  (a) Distortion 1; 
+  <br>(b) Barrel Distortion.
+  <p>
+  <p>
+  <img src="Picture2.jpeg" width="60%">
+  <p>
+  (a) ; 
+  <br>(b) An example of image being reweighted by WeightedRGBLayer.
   <p>
   
 
