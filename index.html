@@ -43,8 +43,8 @@
   Pigmented skin lesions identification plays an important part in accurately
 detecting harmful skin diseases. Image detection and classification techniques 
 are now widely used to improve the overall accuracy of skin cancer detection. 
-Our project proposed an InceptionV3-based model enhanced by optimizing RGB weights 
-to classify the skin lesion image dataset HAM10000. 
+Our project proposed an InceptionV3-based model enhanced by optimizing RGB 
+weights (with WeightedRGBLayer) to classify the skin lesion image dataset HAM10000. 
 Given the imbalanced distribution of the dataset, 100 images were sample from 
 all seven categories, and augmented to construct a new set with 2800 images. 
 A baseline was setup with a batch normalization layer and the InceptionV3 
